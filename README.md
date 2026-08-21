@@ -21,7 +21,7 @@ Console.WriteLine($"Currency Symbol {result.CurrencySymbol}");
 # Release Notes
 Version 2.0.0 (Rel Date: 21/08/2026)
 - Migrated from Azure Devops to GitHub as repository host
-- Dropped support for .Net framework 4.6 but left .Net Standard 2.0 for leagcy systems
+- Dropped support for .Net framework 4.6 but left .Net Standard 2.0 for legacy systems
 - Added support for .Net 10
 
 
