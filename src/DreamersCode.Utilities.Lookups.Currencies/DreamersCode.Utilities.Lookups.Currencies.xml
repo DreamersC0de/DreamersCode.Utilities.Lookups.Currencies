@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DreamersCode.Utilities.Lookups.Currencies</name>
+    </assembly>
+    <members>
+        <member name="T:DreamersCode.Utilities.Lookups.Currencies.CurrencyCollection">
+            <summary>
+            Contains a list of all the currencies against which queries can be made
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Currencies.CurrencyCollection.AllCurrencies">
+            <summary>
+            Represents the set of currencies as per ISO-4217
+            </summary>
+        </member>
+        <member name="M:DreamersCode.Utilities.Lookups.Currencies.CurrencyCollection.#cctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:DreamersCode.Utilities.Lookups.Currencies.Models.DisplayInfo">
+            <summary>
+            Provides display information for the given currency
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Currencies.Models.DisplayInfo.LanguageCode">
+            <summary>
+            The Three letter code representing language code (based on the ISO-639-2)
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Currencies.Models.DisplayInfo.DisplayValue">
+            <summary>
+            The way the record needs to be displayed for the given language
+            </summary>
+        </member>
+        <member name="M:DreamersCode.Utilities.Lookups.Currencies.Models.DisplayInfo.#ctor(System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="langCode">The Three letter code representing language code (based on the ISO-639-2)</param>
+            <param name="displayValue">The way the record needs to be displayed for the given language</param>
+        </member>
+        <member name="T:DreamersCode.Utilities.Lookups.Currencies.Models.Currency">
+            <summary>
+            Model representation of a currency as per ISO 4217
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Currencies.Models.Currency.AlphabeticCode">
+            <summary>
+            The alphabetic code is based on another ISO standard, ISO 3166, which lists the codes for country names. 
+            The first two letters of the ISO 4217 three-letter code are the same as the code for the country name, and, where possible, 
+            the third letter corresponds to the first letter of the currency name.
+            For example:
+            The US dollar is represented as USD – the US coming from the ISO 3166 country code and the D for dollar.
+            The Swiss franc is represented by CHF – the CH being the code for Switzerland in the ISO 3166 code and F for franc.
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Currencies.Models.Currency.NumericCodeAsString">
+            <summary>
+            ISO 4217 The three-digit numeric code is useful when currency codes need to be understood in countries that do not use Latin scripts and for computerized systems. 
+            Where possible, the three-digit numeric code is the same as the numeric country code
+            In this case, the numeric value is padded to adhere to the 3 digit standard
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Currencies.Models.Currency.NumericCode">
+            <summary>
+            ISO 4217 The three-digit numeric code is useful when currency codes need to be understood in countries that do not use Latin scripts and for computerized systems. 
+            Where possible, the three-digit numeric code is the same as the numeric country code
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Currencies.Models.Currency.CurrencySymbol">
+            <summary>
+            The symbol used to represent the currency (might not be available)
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Currencies.Models.Currency.MinorUnit">
+            <summary>
+            The amount of minor units that make a whole
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Currencies.Models.Currency.CurrencyNames">
+            <summary>
+            The names of the currency for a given language code.  English is always present, other languages might be missing
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Currencies.Models.Currency.FractionalUnitNames">
+            <summary>
+            The name of the fractional unit for the currency
+            </summary>
+        </member>
+        <member name="M:DreamersCode.Utilities.Lookups.Currencies.Models.Currency.#ctor(System.String,System.Int16,System.String,System.Int16,System.Collections.Generic.List{DreamersCode.Utilities.Lookups.Currencies.Models.DisplayInfo},System.Collections.Generic.List{DreamersCode.Utilities.Lookups.Currencies.Models.DisplayInfo})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="alphabeticCode">The alphabetic code of the currency</param>
+            <param name="numericCode">The numeric representation of the currency</param>
+            <param name="currencySymbol">The symbol (if exists) for the currency</param>
+            <param name="minorUnit">The number of units needed to form the whole currency</param>
+            <param name="currencyNames">Names for the currency based on the language code</param>
+            <param name="fractionalUnitNames">Names for the currency fractional unit based on the language code</param>
+        </member>
+    </members>
+</doc>
