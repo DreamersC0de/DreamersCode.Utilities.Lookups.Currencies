@@ -19,7 +19,7 @@ Console.WriteLine($"Currency Symbol {result.CurrencySymbol}");
 ```
 
 # Release Notes
-Version 2.0.0 (Rel Date: 18/11/2026)
+Version 2.0.1 (Rel Date: 18/11/2026)
 - Added support for .Net 11
 - Dropped support for .Net 8 (now out of support)
 
