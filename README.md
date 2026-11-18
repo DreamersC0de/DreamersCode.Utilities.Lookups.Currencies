@@ -23,12 +23,10 @@ Version 2.0.1 (Rel Date: 18/11/2026)
 - Added support for .Net 11
 - Dropped support for .Net 8 (now out of support)
 
-
 Version 2.0.0 (Rel Date: 21/08/2026)
 - Migrated from Azure Devops to GitHub as repository host
 - Dropped support for .Net framework 4.6 but left .Net Standard 2.0 for legacy systems
 - Added support for .Net 10
-
 
 Version 1.0.2 (Rel Date: 17/02/2024)
 - Updated url to new package location
